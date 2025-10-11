@@ -1,0 +1,32 @@
+
+/* фон всего Navbar */
+.navbar-custom {
+    background-color: #0f0f2e; /* ← изменить на ваш цвет фона */
+}
+
+/* цвет логотипа / текста бренда */
+.navbar-custom .navbar-brand {
+    color: #ffffff; /* ← цвет надписи Appello */
+}
+
+/* цвет пунктов меню */
+.navbar-custom .nav-link {
+    color: rgba(255, 255, 255, .7); /* ← обычный цвет */
+}
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link:focus {
+    color: #ffffff; /* ← цвет при наведении */
+}
+.navbar-custom .nav-link.active {
+    color: #ffffff; /* ← цвет активного пункта */
+}
+
+
+.btn-quote {
+    color: #ffffff;             
+    border-radius: .25rem;      
+}
+
+.nav-link.active {
+    border-color: none;
+}

@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>site Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    
+    </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container">
+    
+          <!-- Бренд -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="img/Vector.svg" alt="Appello" width="32" height="32" class="me-2">
+            Appello
+          </a>
+    
+          <!-- Бургер-кнопка -->
+          <button class="navbar-toggler" type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#mainNav"
+                  aria-controls="mainNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+            <!-- стандартная иконка -->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- Меню -->
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Process</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>
+            </ul>
+    
+            <!-- Кнопка справа -->
+            <a href="#" class="btn btn-quote">
+              Get project quote
+            </a>
+          </div>
+        </div>
+      </nav>
+      <section
+  class="text-light"
+  style="
+    background: url('img/bg-img.png') no-repeat center center;
+    background-size: cover;
+  "
+>
+  <div class="container min-vh-100 d-flex align-items-center">
+    <div class="row w-100">
+      <div class="col-12 col-md-6
+                  text-center text-md-start
+                  py-5">  <!-- ← здесь большие отступы сверху/снизу -->
+        <h1 class="display-5 fw-bold">
+          Leaders in Software<br>
+          Design & Development
+        </h1>
+        <p class="mb-4">
+          Establishing a technology company takes a strong software team to deliver on what needs to be done.
+        </p>
+        <a href="#" class="btn btn-primary btn-lg">
+          View our work
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+    </header>
+    
+    <!-- Web & App Development Partner Section -->
+<section class="bg-white text-dark py-7" style="padding: 5rem 5rem;">
+  <div class="container">
+    <div class="row">
+      
+      <!-- Left: Heading & Description -->
+      <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+        <h2 class="h3 fw-bold mb-3">
+          Your reliable web and app<br>
+          development partner
+        </h2>
+        <p class="text-muted mb-0">
+          We make successful products that turn great ideas into user-friendly solutions for consumers and businesses.
+        </p>
+      </div>
+      
+      <!-- Right: Features Grid with vertical divider -->
+      <div class="col-12 col-lg-8 border-start border-secondary ps-lg-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          
+          <div class="col">
+            <p class="mb-0 fw-semibold">Completely tailored software.</p>
+          </div>
+          <div class="col">
+            <p class="mb-0 fw-semibold">Daily support with project manager.</p>
+          </div>
+          <div class="col">
+            <p class="mb-0 fw-semibold">Projects delivered on time, always.</p>
+          </div>
+          <div class="col">
+            <p class="mb-0 fw-semibold">Testing and quality assurance.</p>
+          </div>
+          <div class="col">
+            <p class="mb-0 fw-semibold">Professional marketing expertise.</p>
+          </div>
+          <div class="col">
+            <p class="mb-0 fw-semibold">Transparent costs and support.</p>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+    <!-- “Where are you now?” Section -->
+<section class="bg-white text-dark py-5">
+  <div class="container">
+    
+    <!-- Заголовок и инструкция -->
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 text-center mb-5">
+        <h2 class="fw-bold mb-2">Where are you now?</h2>
+        <p class="text-muted mb-0">
+          Use the tabs below to identify what stage you’re at so we can help you move on to the next phase of your project.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Навигация по табам -->
+    <ul class="nav nav-pills justify-content-center mb-5" id="processTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active px-4"
+          id="design-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#design"
+          type="button"
+          role="tab"
+          aria-controls="design"
+          aria-selected="true"
+        >
+          Design
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link px-4"
+          id="develop-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#develop"
+          type="button"
+          role="tab"
+          aria-controls="develop"
+          aria-selected="false"
+        >
+          Develop
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link px-4"
+          id="launch-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#launch"
+          type="button"
+          role="tab"
+          aria-controls="launch"
+          aria-selected="false"
+        >
+          Launch
+        </button>
+      </li>
+    </ul>
+
+    <!-- Контент табов -->
+    <div class="tab-content" id="processTabsContent">
+      <!-- Design Pane -->
+      <div
+        class="tab-pane fade show active"
+        id="design"
+        role="tabpanel"
+        aria-labelledby="design-tab"
+      >
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card border h-100">
+              <div class="card-body">
+                <h5 class="card-title">1. Research</h5>
+                <p class="card-text text-muted">
+                  We can help you better understand your target audience, enabling you to craft a powerful value proposition.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border h-100">
+              <div class="card-body">
+                <h5 class="card-title">2. Requirements</h5>
+                <p class="card-text text-muted">
+                  Based on research insights, we collaborate to determine how your product should function and which features to prioritise.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border h-100">
+              <div class="card-body">
+                <h5 class="card-title">3. UI Design</h5>
+                <p class="card-text text-muted">
+                  We create unique, aesthetically pleasing interfaces that fulfil both user needs and business goals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border h-100">
+              <div class="card-body">
+                <h5 class="card-title">4. Prototyping</h5>
+                <p class="card-text text-muted">
+                  An interactive prototype lets you test and refine the UX before development begins.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Develop Pane -->
+      <div
+        class="tab-pane fade"
+        id="develop"
+        role="tabpanel"
+        aria-labelledby="develop-tab"
+      >
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card border h-100">
+              <div class="card-body">
+                <h5 class="card-title">1. Architecture</h5>
+                <p class="card-text text-muted">
+                  Defining scalable backend and frontend architecture tailored to your product.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border h-100">
+              <div class="card-body">
+                <h5 class="card-title">2. Development</h5>
+                <p class="card-text text-muted">
+                  Implementing features with clean, maintainable code and best practices.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border h-100">
+              <div class="card-body">
+                <h5 class="card-title">3. Testing</h5>
+                <p class="card-text text-muted">
+                  Automated and manual QA to ensure your product is robust and bug-free.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border h-100">
+              <div class="card-body">
+                <h5 class="card-title">4. Deployment</h5>
+                <p class="card-text text-muted">
+                  Continuous integration and delivery pipelines for smooth releases.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Launch Pane -->
+      <div
+        class="tab-pane fade"
+        id="launch"
+        role="tabpanel"
+        aria-labelledby="launch-tab"
+      >
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card border h-100">
+              <div class="card-body">
+                <h5 class="card-title">1. Go-Live</h5>
+                <p class="card-text text-muted">
+                  Launch your product to your users with confidence and zero downtime.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border h-100">
+              <div class="card-body">
+                <h5 class="card-title">2. Monitoring</h5>
+                <p class="card-text text-muted">
+                  Real-time performance and error tracking to catch and fix issues fast.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border h-100">
+              <div class="card-body">
+                <h5 class="card-title">3. Training</h5>
+                <p class="card-text text-muted">
+                  User onboarding sessions and documentation so your team can hit the ground running.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border h-100">
+              <div class="card-body">
+                <h5 class="card-title">4. Support</h5>
+                <p class="card-text text-muted">
+                  Ongoing maintenance, updates, and optimisations based on real user feedback.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Кнопка контакта -->
+    <div class="d-flex justify-content-center mt-5">
+      <a href="#" class="btn btn-primary px-5">Contact us</a>
+    </div>
+
+  </div>
+</section>
+
+    <section
+  class="bg-dark text-light py-5"
+  style="padding-top: 5rem;" 
+>
+  <div class="container" style="padding: 5rem 0;">
+    <!-- Заголовок с увеличенным отступом сверху -->
+    <h2 class="text-center mb-5">
+      We’re proud of our work
+    </h2>
+
+    <!-- Сетка статистик -->
+    <div class="row row-cols-1 row-cols-md-4 text-center g-4">
+      
+      <div class="col">
+        <h3 class="display-6 fw-bold mb-2">50+</h3>
+        <p class="mb-0 small">Successfully completed projects</p>
+      </div>
+
+      <div class="col">
+        <h3 class="display-6 fw-bold mb-2">35+</h3>
+        <p class="mb-0 small">Happy and appreciative customers</p>
+      </div>
+
+      <div class="col">
+        <h3 class="display-6 fw-bold mb-2">10</h3>
+        <p class="mb-0 small">Combined years of experience</p>
+      </div>
+
+      <div class="col">
+        <h3 class="display-6 fw-bold mb-2">23</h3>
+        <p class="mb-0 small">Experienced and talented workers</p>
+      </div>
+
+    </div>
+  </div>
+
+
+      <section class="bg-light py-5 mb-5">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            
+            <!-- Card 1 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/eye.png" 
+                     class="card-img-top" 
+                     alt="Eyetelligence – AI-based Eye Health">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Eyetelligence – AI-based Eye Health
+                  </h5>
+                  <p class="card-text">
+                    Eyetelligence is a medtech company using AI based software to 
+                    recognise eye diseases. Appello software developed their website 
+                    which has just been released.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/give.png" 
+                     class="card-img-top" 
+                     alt="Give + Get – Charity Challenger App">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Give + Get – Charity Challenger App
+                  </h5>
+                  <p class="card-text">
+                    Give + Get is a modern charity app. “Give”, while joining a 
+                    community of active people who complete challenges and reap 
+                    the rewards they offer; “Get”.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/voken.png" 
+                     class="card-img-top" 
+                     alt="Voken – Shared Childcare App">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Voken – Shared Childcare App
+                  </h5>
+                  <p class="card-text">
+                    Voken lets people arrange childcare with families they trust, 
+                    earn tokens and use for your own requests.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/chatti.png" 
+                     class="card-img-top" 
+                     alt="Chattii – Disability Dating App">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Chattii – Disability Dating App
+                  </h5>
+                  <p class="card-text">
+                    Chattii is born from the need to provide a space for people 
+                    living with disabilities to connect, chat, and explore their 
+                    love life.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center mt-5">
+          <a href="#" class="btn btn-primary px-5">See more</a>
+        </div>
+      </section>
+
+      <section
+        class="position-relative"
+        style="
+          
+          background: url('img/bg-img-2.png') no-repeat center center;
+          background-size: cover;
+        "
+      >
+        <div class="container-fluid min-vh-100 d-flex align-items-center">
+          <div class="row w-100 justify-content-center">
+            <div class="col-12 col-md-8 col-lg-5">
+      
+              <!-- Белая карточка с формой -->
+              <div class="card bg-white shadow-sm p-4 p-md-5">
+                <h2 class="h4 mb-4">
+                  Request a callback from our expert team
+                </h2>
+      
+                <form>
+                  <!-- Required service -->
+                  <div class="mb-3">
+                    <label for="service" class="form-label small fw-bold">
+                      Required service*
+                    </label>
+                    <select class="form-select" id="service" required>
+                      <option value="" disabled selected>Choose a service…</option>
+                      <option>iOS App Development</option>
+                      <option>Android App Development</option>
+                      <option>Custom Software Development</option>
+                      <!-- …другие варианты… -->
+                    </select>
+                  </div>
+      
+                  <!-- Details -->
+                  <div class="mb-4">
+                    <label for="details" class="form-label small fw-bold">
+                      Details*
+                    </label>
+                    <textarea
+                      class="form-control"
+                      id="details"
+                      rows="4"
+                      placeholder="Please describe your requirements…"
+                      required
+                    ></textarea>
+                  </div>
+      
+                  <!-- Submit -->
+                  <button type="submit" class="btn btn-primary w-100">
+                    Send request
+                  </button>
+                </form>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+<section class="bg-light text-dark" style="padding: 10rem 0;">
+  <div class="container">
+    <!-- Заголовок и подпись -->
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 text-center mb-5">
+
+        <h2 class="fw-bold mb-3">FAQ</h2>
+
+        <p class="text-muted mb-0">
+          Below is a list of frequently asked questions. If you can’t find what you’re looking for then feel free
+          to ask us directly via
+          <a href="mailto:hello@example.com">email</a>.
+        </p>
+      </div>
+    </div>
+    <!-- Аккордеон -->
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8">
+        <div class="accordion" id="faqAccordion">
+
+          <!-- Вопрос 1 -->
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button collapsed py-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                1. What is your privacy and security policy?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-muted">
+                Our privacy and security policy ensures that all client data is encrypted in transit and at rest.
+                We conduct regular audits and comply with industry standards (e.g. GDPR, SOC 2).
+              </div>
+            </div>
+          </div>
+
+          <!-- Вопрос 2 -->
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed py-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                2. How long is the development timeline?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-muted">
+                Timelines vary by project scope, but typically an MVP can be delivered in 8–12 weeks, followed by
+                iterative releases.
+              </div>
+            </div>
+          </div>
+
+          <!-- Вопрос 3 -->
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed py-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                3. What type of companies do you work with?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-muted">
+                We partner with startups, SMEs, and enterprise clients across fintech, healthcare, education,
+                and more.
+              </div>
+            </div>
+          </div>
+
+          <!-- Вопрос 4 -->
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed py-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                4. How many team members for a project?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-muted">
+                A typical team includes a project manager, designers, developers, and QA engineers – usually
+                4–7 people.
+              </div>
+            </div>
+          </div>
+
+          <!-- Вопрос 5 -->
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button collapsed py-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                5. What warranties are to ensure deliverables are met?
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-muted">
+                We offer post-release support, bug-fix warranties, and SLAs tailored to your requirements.
+              </div>
+            </div>
+          </div>
+
+          <!-- Вопрос 6 -->
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="headingSix">
+              <button
+                class="accordion-button collapsed py-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                6. Do you outsource work?
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingSix"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-muted">
+                All work is done in-house by our vetted team. We may collaborate with trusted partners
+                under strict NDA if needed.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+    <!-- Footer -->
+
+    <div class="row">
+      <div class="col_12">
+        <footer class="bg-dark text-light">
+          <div class="container py-5">
+            <!-- Верхняя часть: текст + логотип -->
+            <div class="row align-items-center">
+              <div class="col-12 col-md-8">
+                <p class="mb-0">Trusted by businesses worldwide.</p>
+              </div>
+              <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
+                <img src="img/Vector.svg" alt="Appello logo" height="30">
+              </div>
+            </div>
+        
+            <!-- увеличенный отступ перед ссылками -->
+            <hr class="border-secondary my-5">
+        
+            <!-- Основная часть: 3 колонки со ссылками, с большими внутренними отступами сверху/снизу -->
+            <div class="row py-5">
+              <!-- Our services -->
+              <div class="col-12 col-md-4 mb-4 mb-md-0">
+                <h5>Our services</h5>
+                <ul class="list-unstyled">
+                  <li class="border-bottom border-secondary py-1">iOS App Development</li>
+                  <li class="border-bottom border-secondary py-1">Android App Development</li>
+                  <li class="border-bottom border-secondary py-1">UX/UI App Design</li>
+                  <li class="border-bottom border-secondary py-1">Custom Software Development</li>
+                  <li class="border-bottom border-secondary py-1">Healthcare Software Development</li>
+                  <li class="border-bottom border-secondary py-1">Education Software Development</li>
+                  <li class="border-bottom border-secondary py-1">FinTech Software Development</li>
+                </ul>
+              </div>
+        
+              <!-- Our offices -->
+              <div class="col-12 col-md-4 mb-4 mb-md-0">
+                <h5>Our offices</h5>
+                <ul class="list-unstyled">
+                  <li class="border-bottom border-secondary py-1">WeWork - George St, Sydney, Australia</li>
+                  <li class="border-bottom border-secondary py-1">Sydney Startup Hub - Sydney, Australia</li>
+                  <li class="border-bottom border-secondary py-1">WeWork - Edward St, Brisbane, Australia</li>
+                  <li class="border-bottom border-secondary py-1">40 Bank St, Canary Wharf, London, UK</li>
+                  <li class="border-bottom border-secondary py-1">WeWork - Paddington, West London, UK</li>
+                  <li class="border-bottom border-secondary py-1">WeWork - Mission St, San Francisco, US</li>
+                </ul>
+              </div>
+        
+              <!-- Contact us -->
+              <div class="col-12 col-md-4">
+                <h5>Contact us</h5>
+                <ul class="list-unstyled">
+                  <li class="border-bottom border-secondary py-1">Email: hello@appello.com.au</li>
+                  <li class="border-bottom border-secondary py-1">Sydney: (+61) 027 202 5164</li>
+                  <li class="border-bottom border-secondary py-1">London: (+44) 203 608 3126</li>
+                  <li class="border-bottom border-secondary py-1">San Francisco: (+1) 628 280 6518</li>
+                </ul>
+              </div>
+            </div>
+        
+            <!-- увеличенный отступ после ссылок -->
+            <hr class="border-secondary my-5">
+        
+            <!-- Нижняя часть: копирайт, соцсети, sitemap -->
+            <div class="row align-items-center">
+              <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+                &copy; Appello Pty. Ltd. 2021
+              </div>
+              <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                <a href="#" class="text-light mx-2">Facebook</a>
+                <a href="#" class="text-light mx-2">Instagram</a>
+                <a href="#" class="text-light mx-2">Dribbble</a>
+                <a href="#" class="text-light mx-2">LinkedIn</a>
+              </div>
+              <div class="col-12 col-md-4 text-center text-md-end">
+                <a href="#" class="text-light">Sitemap</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script>
+ 
+</body>
+</html>
