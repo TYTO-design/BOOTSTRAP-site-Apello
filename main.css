@@ -30,4 +30,24 @@
 
 .nav-link.active {
   border-color: none;
+}
+
+.modal {
+  color: gray;
+}
+
+.carousel-control-prev {
+  left: -40px;
+  filter: invert(1);
+}
+
+.carousel-control-next {
+  right: -40px;
+  filter: invert(1);
+}
+
+@media (max-width: 768px) {
+  .carousel-control-prev, .carousel-control-next {
+    visibility: hidden;
+  }
 }/*# sourceMappingURL=main.css.map */
